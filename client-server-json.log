@@ -1,13 +1,13 @@
-Requesting from server running in: https://mysterious-waters-69770.herokuapp.com/
+Requesting from server running in: https://mysterious-waters-69770.herokuapp.com/sdelab
 
 Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
 => Result: OK
 => HTTP Status: 200
 [ {
   "idPerson" : 1,
-  "firstname" : "Lucky",
-  "lastname" : "Luke",
-  "birthdate" : "1965-02-12",
+  "firstname" : "Goodlucky",
+  "lastname" : "Nicolai",
+  "birthdate" : "1990-10-01",
   "healthProfile" : {
     "measureType" : [ {
       "mid" : 2,
@@ -23,9 +23,9 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
   }
 }, {
   "idPerson" : 2,
-  "firstname" : "Charlie",
-  "lastname" : "Brown",
-  "birthdate" : "1945-01-10",
+  "firstname" : "James",
+  "lastname" : "Bond",
+  "birthdate" : "2001-01-10",
   "healthProfile" : {
     "measureType" : [ {
       "mid" : 4,
@@ -41,9 +41,9 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
   }
 }, {
   "idPerson" : 3,
-  "firstname" : "Jack",
-  "lastname" : "Black",
-  "birthdate" : "1960-10-10",
+  "firstname" : "Udoka",
+  "lastname" : "Matthew",
+  "birthdate" : "1987-11-17",
   "healthProfile" : {
     "measureType" : [ {
       "mid" : 7,
@@ -59,8 +59,8 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
   }
 }, {
   "idPerson" : 4,
-  "firstname" : "Paul",
-  "lastname" : "Martin",
+  "firstname" : "Dede ",
+  "lastname" : "Paul",
   "birthdate" : "1980-12-11",
   "healthProfile" : {
     "measureType" : [ {
@@ -72,8 +72,8 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
   }
 }, {
   "idPerson" : 5,
-  "firstname" : "Patrick",
-  "lastname" : "Brown",
+  "firstname" : "Joshua",
+  "lastname" : "Okonkow",
   "birthdate" : "1985-01-25",
   "healthProfile" : {
     "measureType" : [ {
@@ -85,8 +85,8 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
   }
 }, {
   "idPerson" : 6,
-  "firstname" : "Max",
-  "lastname" : "Stepan",
+  "firstname" : "Ada",
+  "lastname" : "Adanma",
   "birthdate" : "1992-02-20",
   "healthProfile" : {
     "measureType" : [ {
@@ -98,8 +98,8 @@ Request #1: GET /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
   }
 }, {
   "idPerson" : 7,
-  "firstname" : "Jack",
-  "lastname" : "Bauer",
+  "firstname" : "Tony",
+  "lastname" : "Cool",
   "birthdate" : "1978-09-02",
   "healthProfile" : {
     "measureType" : [ {
@@ -121,9 +121,9 @@ Request #2: GET /person/1 Accept: APPLICATION/JSON Content-type: APPLICATION/JSO
 => HTTP Status: 200
 {
   "idPerson" : 1,
-  "firstname" : "Lucky",
-  "lastname" : "Luke",
-  "birthdate" : "1965-02-12",
+  "firstname" : "Goodlucky",
+  "lastname" : "Nicolai",
+  "birthdate" : "1990-10-01",
   "healthProfile" : {
     "measureType" : [ {
       "mid" : 2,
@@ -145,8 +145,8 @@ Request #3: PUT /person/1 Accept: APPLICATION/JSON Content-type: APPLICATION/JSO
 {
   "idPerson" : 1,
   "firstname" : "Goodlucky",
-  "lastname" : "Luke",
-  "birthdate" : "1965-02-12",
+  "lastname" : "Nicolai",
+  "birthdate" : "1990-10-01",
   "healthProfile" : {
     "measureType" : [ {
       "mid" : 2,
@@ -166,29 +166,29 @@ Request #4: POST /person Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
 => Result: OK
 => HTTP Status: 200
 {
-  "idPerson" : 9,
+  "idPerson" : 24,
   "firstname" : "Chuck",
   "lastname" : "Norris",
   "birthdate" : "1945-01-01",
   "healthProfile" : {
     "measureType" : [ {
-      "mid" : 17,
-      "created" : "2016-11-22",
+      "mid" : 59,
+      "created" : "2016-11-29",
       "measure" : "weight",
       "value" : 78.9
     }, {
-      "mid" : 18,
-      "created" : "2016-11-22",
+      "mid" : 60,
+      "created" : "2016-11-29",
       "measure" : "height",
       "value" : 172.0
     } ]
   }
 }
 
-Request #5: DELETE /person/9 Accept: APPLICATION/JSON Content-type: NULL
+Request #5: DELETE /person/24 Accept: APPLICATION/JSON Content-type: NULL
 => Result: OK
 => HTTP Status: 204
-Request: GET /person/9: 
+Request: GET /person/24: 
 => HTTP Status: 404
 
 Request #9: GET /measureTypes Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
@@ -215,6 +215,76 @@ Request #6: GET /person/1/weight;/person/1/height;/person/1/steps;/person/7/weig
   "created" : "2014-05-10",
   "measure" : "weight",
   "value" : 86.0
+}, {
+  "mid" : 19,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 20,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 25,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 26,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 31,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 32,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 37,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 38,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 43,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 44,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 49,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 50,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 55,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
+}, {
+  "mid" : 56,
+  "created" : "2011-12-09",
+  "measure" : "weight",
+  "value" : 90.0
 } ][ {
   "mid" : 3,
   "created" : "2012-08-13",
@@ -246,17 +316,17 @@ Request #8: POST /person/1/weight Accept: APPLICATION/JSON Content-type: APPLICA
 => Result: OK
 => HTTP Status: 200
 {
-  "mid" : 20,
+  "mid" : 62,
   "created" : "2011-12-09",
   "measure" : "weight",
   "value" : 72.0
 }
 
-Request #10: PUT /person/1/weight/20 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
+Request #10: PUT /person/1/weight/62 Accept: APPLICATION/JSON Content-type: APPLICATION/JSON
 => Result: OK
 => HTTP Status: 200
 {
-  "mid" : 20,
+  "mid" : 62,
   "created" : "2011-12-09",
   "measure" : "weight",
   "value" : 90.0
@@ -283,8 +353,8 @@ Request #12: GET /person?measureType=weight&max=88&min=75 Accept: APPLICATION/JS
 [ {
   "idPerson" : 1,
   "firstname" : "Goodlucky",
-  "lastname" : "Luke",
-  "birthdate" : "1965-02-12",
+  "lastname" : "Nicolai",
+  "birthdate" : "1990-10-01",
   "healthProfile" : {
     "measureType" : [ {
       "mid" : 2,
@@ -300,8 +370,8 @@ Request #12: GET /person?measureType=weight&max=88&min=75 Accept: APPLICATION/JS
   }
 }, {
   "idPerson" : 4,
-  "firstname" : "Paul",
-  "lastname" : "Martin",
+  "firstname" : "Dede ",
+  "lastname" : "Paul",
   "birthdate" : "1980-12-11",
   "healthProfile" : {
     "measureType" : [ {
